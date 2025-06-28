@@ -8,16 +8,25 @@ Shows a rolling average of ping times to monitor network latency: `5.8ms`
 
 ## Installation
 
+### With Tmux Plugin Manager (TPM)
+
+Add to your `.tmux.conf`:
+```bash
+set -g @plugin 'Someblueman/tmux-ping'
+```
+
+Then press `prefix + I` to install.
+
 ### Manual Installation
 
 Clone the repo:
 ```bash
-git clone https://github.com/yourusername/tmux-ping ~/Code/tmux-ping
+git clone https://github.com/Someblueman/tmux-ping ~/.tmux/plugins/tmux-ping
 ```
 
 Add to your `.tmux.conf`:
 ```bash
-run-shell ~/Code/tmux-ping/ping.tmux
+run-shell ~/.tmux/plugins/tmux-ping/ping.tmux
 ```
 
 ## Usage
